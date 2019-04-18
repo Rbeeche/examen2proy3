@@ -1,0 +1,50 @@
+{
+    "name": "Review",
+    "fields": [
+        {
+            "fieldName": "timeStamp",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "student",
+            "otherEntityName": "student",
+            "otherEntityRelationshipName": "review"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "story",
+            "otherEntityName": "story",
+            "otherEntityField": "name",
+            "otherEntityRelationshipName": "review"
+        }
+    ],
+    "changelogDate": "20190418001954",
+    "entityTableName": "review",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
