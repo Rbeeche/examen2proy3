@@ -30,6 +30,8 @@
         "entitySuffix": "",
         "dtoSuffix": "DTO",
         "otherModules": [],
-        "enableTranslation": false
+        "enableTranslation": false,
+        "herokuAppName": "examen-2-proy-3",
+        "herokuDeployType": "git"
     }
 }
